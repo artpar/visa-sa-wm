@@ -65,7 +65,7 @@ $orderAmount = 100;
 
                 <div class="form-group">
                     <label for="paymentMethod">Payment Method</label>
-                    <select class="form-control" id="paymentMethod">
+                    <select name="payment_method" class="form-control" id="paymentMethod">
                         <option value="card">Card</option>
                     </select>
                 </div>
