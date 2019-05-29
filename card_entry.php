@@ -79,7 +79,7 @@
                         </div>
 
                         <div class="row ">
-
+                            <input type="hidden" value="001" name="card_type" id="card_type">
                             <div class="col-md-12 text-right">
                                 <button type="submit" class="btn btn-success">Submit</button>
                                 <button type="button" class="btn btn-info">Clear</button>
@@ -95,7 +95,7 @@
 </div>
 </body>
 <script type="text/javascript">
-    new Card({
+    var cardHolder = new Card({
         form: 'form',
         container: '.card',
         formSelectors: {
@@ -117,6 +117,7 @@
     function formValidate() {
         document.getElementsByName("card_number")[0].value = document.getElementsByName("card_number")[0].value.split(" ").join("")
         document.getElementsByName("card_expiry_date")[0].value = document.getElementsByName("card_expiry_date")[0].value.split(" ").join("").replace("\/", "-")
+        document.getElementById("card_type").value = cardHolder.cardType == "visa" ? "001": "002";
     }
 </script>
 </html>
