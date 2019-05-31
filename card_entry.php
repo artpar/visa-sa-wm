@@ -72,8 +72,6 @@
                                 <div class="form-group">
 
                                     <label>CVV </label>
-
-                                    <input type="text" value="100" name="card_cvn" class="form-control"/>
                                 </div>
                             </div>
                         </div>
