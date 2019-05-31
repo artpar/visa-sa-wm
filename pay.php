@@ -29,9 +29,11 @@ $orderAmount = 100;
                 <input type="hidden" name="transaction_uuid" value="<?php echo $refId ?>">
                 <input type="hidden" name="signed_field_names"
                        value="access_key,profile_id,transaction_uuid,signed_field_names,unsigned_field_names,signed_date_time,locale,transaction_type,reference_number,amount,currency,payment_method,bill_to_forename,bill_to_surname,bill_to_email,bill_to_phone,bill_to_address_line1,bill_to_address_city,bill_to_address_state,bill_to_address_country,bill_to_address_postal_code">
-                <input type="hidden" name="unsigned_field_names" value="card_type,card_number,card_expiry_date">
+                <input type="hidden" name="unsigned_field_names" value="card_type,card_number,card_expiry_date,card_cvn">
                 <input type="hidden" name="signed_date_time" value="<?php echo gmdate("Y-m-d\TH:i:s\Z"); ?>">
                 <input type="hidden" name="locale" value="en">
+
+                <input type="hidden" name="card_type" value="001">
                 <input type="hidden" name="transaction_type" value="authorization" size="25">
                 <input type="hidden" name="currency" size="25" value="inr">
                 <input type="hidden" value="<?php echo $refId ?>" name="reference_number" size="25">
