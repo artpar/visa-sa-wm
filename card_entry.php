@@ -72,12 +72,12 @@
                                 <div class="form-group">
 
                                     <label>CVV </label>
+                                    <input type="text" value="100" name="card_cvn" class="form-control"/>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row ">
-                            <input type="hidden" value="001" name="card_type" id="card_type">
                             <div class="col-md-12 text-right">
                                 <button type="submit" class="btn btn-success">Submit</button>
                                 <button type="button" class="btn btn-info">Clear</button>
